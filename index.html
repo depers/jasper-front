@@ -98,9 +98,8 @@
 </body>
 
 <script type="text/javascript">
-    const serverUrl = "";
-    const frontUrl = "http://localhost:8080/front/index.html";
-    const baseUrl = "http://localhost:8080/front";
+    const serverUrl = "http://43.142.173.83/blog";
+    const frontUrl = "http://43.142.173.83/front/index.html";
     $(document).ready(function(){
         const url = new URL(window.location.href);
         const page = url.searchParams.get("p");
@@ -133,7 +132,7 @@
                     var articleHtml = "";
                     data.list.forEach(element => {
                         var tagStr = element.tags.join("/");
-                        var jumpUrl = baseUrl + "/details.html?aid=" + element.articleId;
+                        var jumpUrl = "/details.html?aid=" + element.articleId;
                         var ht = "<article class=\"md-content__inner md-typeset\">" +
                                  "<p class=\"md-content__word_small\">" + 
                                  element.tags.join(" / ") + 
