@@ -101,10 +101,22 @@
     const serverUrl = "http://43.142.173.83/blog";
     const frontUrl = "http://43.142.173.83/front/index.html";
     $(document).ready(function(){
+        // 隐藏内容
+        $(".md-main").hide();
+        load();
+
+        setTimeout(() => {
+            // 展示内容
+            $(".md-main").show();
+        }, 300)
+        
+    });
+
+    function load() {
         const url = new URL(window.location.href);
         const page = url.searchParams.get("p");
         requestIndex(page);
-    });
+    }
 
     function requestIndex(page) {
         if (page == "" || page == undefined) {
