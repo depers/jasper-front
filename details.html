@@ -115,7 +115,12 @@
 
 <script>
     const serverUrl = "http://43.142.173.83/blog";
-    var articleId; 
+    var articleId;
+
+    var loadObj = {
+      show: false
+    };
+
     $(document).ready(function(){
         // 获取请求链接中的参数
         const url = new URL(window.location.href);
@@ -139,9 +144,6 @@
         requestDetail(articleId);
 
         // 是否展示dom主体内容
-        var loadObj = {
-          show: false
-        };
         Object.defineProperty(loadObj, "show", {
           set: function(newValue) {
             console.log("loadObj.show: " + newValue);
