@@ -134,11 +134,6 @@ p{
     font-family: quote, elipse, dash, emdash, HarmonyOS_Regular ;
 }
 
-
-.md-content {
-    background-color: white;
-}
-
 .md-content__inner {
     margin: 0 0.8rem;
     padding: 1.2rem 0 1.2rem;
