@@ -13,6 +13,7 @@
     <script src="js/marked.umd.js"></script>
     <script src="js/highlight.min.js"></script>
     <link href="css/github-markdown-light.css" rel="stylesheet">
+    <link href="css/spinner.css" type="text/css" rel="stylesheet"/>
   </head>
 
   <body>
@@ -58,6 +59,11 @@
         </div>
       </nav>
     </header>
+
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
 
     <main class="md-main">
       <div class="md-main__inner md-grid">
@@ -127,8 +133,17 @@
           }
         }) 
 
-
+        // 隐藏内容
+        $(".md-main").hide();
         requestDetail(articleId);
+
+        setTimeout(() => {
+            // 隐藏loading
+            $(".spinner").hide();
+            // 展示内容
+            $(".md-main").fadeIn("500");
+        }, 500)
+
     });
 
     function requestDetail(articleId) {
