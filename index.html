@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jasper</title>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/spinner.css" type="text/css" rel="stylesheet"/>
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/axios.js"></script>
 </head>
@@ -53,6 +54,11 @@
         </div>
     </nav>
 </header>
+
+<div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+</div>
 
 <main class="md-main">
     <div class="md-main__inner md-grid">
@@ -106,8 +112,10 @@
         load();
 
         setTimeout(() => {
+            // 隐藏loading
+            $(".spinner").hide();
             // 展示内容
-            $(".md-main").fadeIn("slow");
+            $(".md-main").fadeIn("300");
         }, 300)
         
     });
