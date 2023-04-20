@@ -3,8 +3,7 @@
     width: 40px;
     height: 40px;
     position: relative;
-    text-align: center;
-
+    background-color: transparent;
     -webkit-animation: sk-rotate 2.0s infinite linear;
     animation: sk-rotate 2.0s infinite linear;
 }
