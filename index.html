@@ -106,18 +106,32 @@
 <script type="text/javascript">
     const serverUrl = "http://43.142.173.83/blog";
     const frontUrl = "http://43.142.173.83/front/index.html";
+
+    // 控制显示的对象
+    var loadObj = {
+      show: false
+    };
+
     $(document).ready(function(){
+
         // 隐藏内容
         $(".md-main").hide();
         load();
 
-        setTimeout(() => {
-            // 隐藏loading
-            $(".spinner").hide();
-            // 展示内容
-            $(".md-main").fadeIn("300");
-        }, 300)
-        
+        // 是否展示dom主体内容
+        Object.defineProperty(loadObj, "show", {
+          set: function(newValue) {
+            console.log("loadObj.show: " + newValue);
+            if (newValue == true) {
+              // 隐藏loading
+              $(".spinner").fadeOut("300");
+              setTimeout(() => {
+                // 展示内容
+                $(".md-main").fadeIn("300");
+              }, 300);
+            }
+          }
+        }) 
     });
 
     function load() {
