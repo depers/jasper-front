@@ -150,8 +150,10 @@
             if (newValue == true) {
               // 隐藏loading
               $(".spinner").fadeOut("300");
-              // 展示内容
-              $(".md-main").fadeIn("300");
+              setTimeout(() => {
+                // 展示内容
+                $(".md-main").fadeIn("300");
+              }, 300);
             }
           }
         })
