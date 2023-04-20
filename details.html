@@ -144,6 +144,7 @@
         };
         Object.defineProperty(loadObj, "show", {
           set: function(newValue) {
+            console.log("loadObj.show: " + newValue);
             if (newValue == true) {
               // 隐藏loading
               $(".spinner").hide();
