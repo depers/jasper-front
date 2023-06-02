@@ -7,11 +7,15 @@
     <title></title>
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="css/details.css" type="text/css" rel="stylesheet" />
-    <link href="css/github.min.css" type="text/css" rel="stylesheet"/>
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/axios.js"></script>
+    <!-- 引入github markdown的样式 -->
     <link href="css/github-markdown-light.css" rel="stylesheet">
+    <!-- 引入loading的样式 -->
     <link href="css/spinner.css" type="text/css" rel="stylesheet"/>
+    <!-- 引入highlight.js的配置 -->
+    <link href="css/github.min.css" type="text/css" rel="stylesheet"/>
+    <script src="js/highlight.min.js"></script>
   </head>
 
   <body>
@@ -186,6 +190,8 @@
                         commentListHtml = commentListHtml + commentHtml;
                     });
                     $(".comment-list").append(commentListHtml);
+                    // 代码高亮
+                    hljs.highlightAll();
                     // 设置可以展示主体内容
                     loadObj.show = true;
                 } else {
