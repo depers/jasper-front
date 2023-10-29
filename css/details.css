@@ -54,8 +54,11 @@
 }
 
 .comment-content {
-    padding: 0.5rem 0;
-    text-indent: 2em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1rem;
+    white-space: pre-line;
+    padding-left: 2em;
 }
 
 .comment-date {
