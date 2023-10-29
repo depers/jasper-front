@@ -1,7 +1,7 @@
 .md-content__title {
     text-align: center;
     display: block;
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 1.8;
     color: rgba(0,0,0,.75);
     font-style: normal;
@@ -10,7 +10,7 @@
 
 .md-content__con {
     margin-top: 1rem;
-    font-size: 16px;
+    font-size: .67rem;
 }
 
 .md-content__con pre {
@@ -39,7 +39,7 @@
 
 .comment {
     border-bottom: 1px solid rgba(0,0,0,.05);
-    font-size: 15px; 
+    font-size: .625rem; 
     color: rgba(0,0,0,.75); 
     padding: 0.7rem 0;
 }
@@ -75,19 +75,19 @@
     color: rgba(0,0,0,.75);
     border: 1px solid rgba(0,0,0,.15);
     padding: 10px;
-    font-size: 15px;
+    font-size: .625rem;
     outline: none;
 }
 
 .publish-title {
-    font-size: 15px;
+    font-size: .625rem;
 }
 
 .comment-input {
     margin: 0.5rem 0;
     width: 40%;
     height: 1.5rem;
-    font-size: 15px;
+    font-size: .625rem;
     color: rgba(0,0,0,.75);
     border: 1px solid rgba(0,0,0,.15);
     outline: none;

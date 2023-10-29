@@ -82,15 +82,15 @@ p {
     width: auto;
 }
 
+.md-header__button:hover {
+    opacity: .7;
+}
+
 .md-header__title {
     margin-right: 0.4rem;
     font-size: .9rem;
     line-height: 2.4rem;
     flex-grow: 1;
-}
-
-.md-header__topic:first-child {
-    font-weight: 700;
 }
 
 .md-source {
@@ -156,14 +156,14 @@ p {
 
 .md-content__word_small {
     text-align: center;
-    font-size: 14px;
+    font-size: .58rem;
     color: rgba(0, 10, 20, .4);
     line-height: 1.8;
 }
 
 .md-content__word_date {
     text-align: center;
-    font-size: 14px;
+    font-size: .58rem;
     color: rgba(0, 10, 20, .4);
     line-height: 1.8;
 }
@@ -171,7 +171,7 @@ p {
 .md-content__word {
     text-align: center;
     display: block;
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 1.8;
     color: rgba(0, 0, 0, .75);
     font-style: normal;
@@ -185,7 +185,7 @@ p {
 .md-content__desc {
     margin-top: .8rem;
     color: rgba(0, 0, 0, .75);
-    font-size: 17px
+    font-size: .7rem
 }
 
 
@@ -242,6 +242,6 @@ p {
     padding: 0.8rem;
     background: var(--main-bg-color);
     text-align: center;
-    font-size: 13px;
+    font-size: .54rem;
     color: #fff;
 }
