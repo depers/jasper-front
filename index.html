@@ -15,7 +15,7 @@
 <body>
 <header class="md-header">
     <nav class="md-grid md-grid__inner">
-        <a class="md-header__button md-logo">
+        <a class="md-header__button md-logo" href="/index.html">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
               <path
                 d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z"
@@ -148,7 +148,7 @@
 
         axios({
             method: 'get',
-            url: 'http://43.142.173.83/blog/index/article/list',
+            url: serverUrl + '/index/article/list',
             params: {
                 pageNum: page,
                 pageSize: 10
