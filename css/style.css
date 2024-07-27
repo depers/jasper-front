@@ -17,6 +17,7 @@ html {
     font-size: 22px;
     --main-bg-color: #4051b5;
     --main-border-color: rgba(0, 0, 0, .05);
+    scroll-behavior: smooth;
 }
 
 com-width {
@@ -237,6 +238,7 @@ p {
     margin: 0 0.2rem;
 }
 
+
 /* 底部 */
 .foot-bg {
     padding: 0.8rem;
@@ -244,4 +246,30 @@ p {
     text-align: center;
     font-size: .54rem;
     color: #fff;
+}
+
+/*补充返回顶部功能*/
+.scrollToTopBtn {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    text-align: center;
+    text-decoration: none;
+
+    position: fixed;
+    bottom: 4.5rem;
+    right: 1rem;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
 }

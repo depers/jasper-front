@@ -104,6 +104,8 @@
     </div>
 </main>
 
+<div class="scrollToTopBtn" href="#top" title="返回顶部">☝️</div>
+
 <footer>
     <div class="foot-bg">
         <p>Designed & Powerd by depers</p>
@@ -121,7 +123,8 @@
 </body>
 
 <script>
-    const serverUrl = "http://www.bravedawn.cn/blog";
+    // const serverUrl = "http://www.bravedawn.cn/blog";
+    const serverUrl = "http://localhost:8081";
     var articleId;
 
     // 控制显示的对象
@@ -286,5 +289,11 @@
         }
         return format;
     }
+
+    // 补充返回顶部按钮
+    const rootElement = document.documentElement
+    const scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+    document.addEventListener('scroll', handleScroll)
 </script>
 </html>
