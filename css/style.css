@@ -273,3 +273,8 @@ p {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.content {
+    display: none;
+}
